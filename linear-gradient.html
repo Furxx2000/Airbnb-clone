@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 200px;
+            margin: 20px;
+
+        }
+
+        .grad1 {
+            background: linear-gradient(rgb(248, 73, 73), rgba(250, 196, 96, 0.986), rgba(117, 117, 253, 0.979), rgba(253, 253, 111, 0.979), rgba(119, 255, 119, 0.986));
+        }
+
+        .grad2 {
+            background: linear-gradient(to right, rgb(248, 73, 73), rgba(250, 196, 96, 0.986), rgba(117, 117, 253, 0.979), rgba(253, 253, 111, 0.979), rgba(119, 255, 119, 0.986));
+        }
+
+        .grad3 {
+            background: linear-gradient(135deg, rgb(248, 73, 73), rgba(250, 196, 96, 0.986), rgba(117, 117, 253, 0.979), rgba(253, 253, 111, 0.979), rgba(119, 255, 119, 0.986));
+        }
+
+        .grad4 {
+            background: linear-gradient(to left, rgb(248, 73, 73)50%, rgba(250, 196, 96, 0.986), rgba(117, 117, 253, 0.979)80%, rgba(253, 253, 111, 0.979), rgba(119, 255, 119, 0.986));
+        }
+
+        .grad5 {
+            background: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1));
+        }
+
+        .grad6 {
+            background: linear-gradient(#a1c4fdbe 50%, #c2e9fbce 50%), linear-gradient(90deg, #a1c4fd 50%, #c2e9fb 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad7 {
+            background: linear-gradient(#a1c4fd, #c2e9fb);
+        }
+
+        .grad8 {
+            background: repeating-linear-gradient(#f83600, #f9d423 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box grad1">Grad1</div>
+    <div class="box grad2">Grad2</div>
+    <div class="box grad3">Grad3</div>
+    <div class="box grad4">Grad4</div>
+    <div class="box grad5">Grad5</div>
+    <div class="box grad6">Grad6</div>
+    <div class="box grad7">Grad7</div>
+    <div class="box grad8">Grad8</div>
+</body>
+
+</html>

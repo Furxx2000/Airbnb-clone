@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+    <style>
+        .outBlcok {
+            position: relative;
+        }
+
+        .textBlock {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .textBlock::before {
+            content: attr(data-content);
+            position: absolute;
+            top: -20px;
+            height: 30px;
+            overflow: hidden;
+            color: rgba(0, 0, 0, 0.555)
+        }
+
+        .textBlock::after {
+            content: attr(data-content);
+            position: absolute;
+            top: -40px;
+            right: 0;
+            height: 30px;
+            overflow: hidden;
+            color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outBlock">
+        <div class="textBlock" data-content="HELLO">
+            HELLO
+        </div>
+    </div>
+</body>
+
+</html>

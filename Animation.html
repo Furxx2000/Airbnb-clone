@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+
+        .wrapper {
+            width: 500px;
+            height: 500px;
+            border: 1.5px solid #e09393;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ffa;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            animation-name: pinpon;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes pinpon {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            10% {
+                top: 400px;
+                left: 200px;
+            }
+
+            20% {
+                top: 150px;
+                left: 400px
+            }
+
+            30% {
+                top: 0;
+                left: 250px;
+            }
+
+            40% {
+                top: 400px;
+                left: 200px;
+            }
+
+            50% {
+                top: 250px;
+                left: 0;
+            }
+
+            60% {
+                top: 0;
+                left: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
